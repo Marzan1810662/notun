@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>M Bazar| Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div id="logo"><a href="index.html"> M Bazar</a></div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html"><img src="home.png" alt="Home" height="30px" width="30px"></a>
+                </li>
+                <li>
+                    <a href=""><img src="account.png" alt="account" height="30px" width="30px"></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="emptycart">
+        <h1 style="color: blueviolet;font-weight: bolder;">Cart</h1><br>
+        <p>Nothing has been added to the cart</p>
+        <a href="index.html"><button class="cartbutton" style="width: fit-content;">Continue Shopping</button></a>
+    </div>
+    <div id="cartpage">
+        <h1 style="color: blueviolet;font-weight: bolder;">Cart</h1><br>
+        <div class="cart">
+
+        </div>
+        <div class="bar" style="margin: 10px;">
+            <button class="totalprice">Total price</button>
+            <div id="tp"></div>
+            <a href="index.html"><button class="cartbutton" style="width: fit-content;">Continue Shopping</button></a>
+            <button class="cartbutton" style="width: fit-content;">Checkout</button>
+        </div>
+    </div>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
