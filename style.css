@@ -129,11 +129,17 @@ p {
     flex-wrap: wrap;
     margin: 90px 0px;
     margin-bottom: 0px;
-    padding: 50px;
+    padding: 50px 0px;
     padding-bottom: 60px;
     /* padding-left: 50px; */
     /* border-bottom: 2px solid blueviolet; */
     /* background-color: rgb(239, 220, 241); */
+}
+
+.col-1 {
+    color: palevioletred;
+    margin-left: 100px;
+    width: 500px;
 }
 
 .col-2 {

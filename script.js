@@ -13,6 +13,7 @@ if (products.length > 0) {
         let price = $('<p>').text('Price: ' + products[i].price + "BDT");
         let details = $('<button>').text('details').attr("id", "d" + i).addClass("productviewbtn");
         let addcart = $('<button>').text('Add to cart').attr("id", "p" + i).addClass("productviewbtn");
+        //let addcart = $('<button>').text('Add to cart').attr("id", "p" + i).addClass("productviewbtn cart");
         let remove = $('<button>').text('Remove').attr("id", "r1" + i).addClass("productviewbtn");
         let div1 = $('<div>').append(name, price, details, addcart).css("text-align", "left").addClass("productview");
         let product = $('<div>').append(image, div1).addClass('eachproduct');
@@ -22,7 +23,12 @@ if (products.length > 0) {
     }
 }
 
-//submit butoon on click
+//line 16 click function with classname for dynamicaaly created button
+// $('.cart').click(function(event) {
+//     console.log(event.target.id);
+// })
+
+//submit button on click
 $('#submit').click(function() {
     let id = products.length
     let name = $('#name').val();
@@ -48,6 +54,12 @@ $('#submit').click(function() {
 })
 
 
+//cancel button on click
+$('#cancel').click(function() {
+    window.location.href = "add_products.html"
+})
+
+
 
 cart = [];
 
@@ -63,7 +75,7 @@ if (cart.length == 0) {
 }
 
 
-if (cart.length == 0) { $('#itemno').hide() } else { $('#itemno').show() }
+// if (cart.length == 0) { $('#itemno').hide() } else { $('#itemno').show() }
 $('#itemno').text(cart.length)
 
 
